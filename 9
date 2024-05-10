@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+int suma_random(){
+    srand(time(NULL));
+    int r1 = (rand() % 6) + 1;
+    int r2 = (rand() % 6) + 1;
+    printf("La suma entre %i y %i es: ", r1, r2);
+    return r1 + r2;
+}
+
+int main(void){
+    printf("%d", suma_random());
+    return 0;
+}
