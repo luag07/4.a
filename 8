@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <limits.h>
+
+int r(){
+
+    srand (time(NULL));
+    int r = (rand() % 8) + 1;
+
+    return r > 5 ? 6 : r;
+
+}
+int main(void){
+
+    printf("%d", r());
+    return 0;
+
+}
